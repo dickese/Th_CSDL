@@ -45,3 +45,24 @@ go
   insert into KhachHang(MaKH,TenKH,DiaChi,Phone,LoaiKH, DCMail,  DiemTL) values('KH3', N'Nguyễn Minh Trung', N'3 Lê Lợi Quận Gò Vấp', '098343434','VIP','Trung@gmail.com',800)
 go
 insert into HoaDon(MaHD, NgayLapHD, MakH, NgayGiao, NoiChuyen) values(1, '2024-09-30 00:00:00', 'KH1', '2024-10-05 00:00:00', N'Cửa Hàng ABC 3 Lý Chính Thắng Quận 3')
+insert into HoaDon(MaHD, NgayLapHD, MakH, NgayGiao, NoiChuyen) values(2, '2025-07-29 00:00:00', 'KH2', '2025-08-10 00:00:00', N'23 Lê Lợi Quận Gò Vấp')
+insert into HoaDon(MaHD, NgayLapHD, MakH, NgayGiao, NoiChuyen) values(3, '2024-10-01 00:00:00', 'KH3', '2024-10-01 00:00:00', N'2 Nguyễn Du Quận Gò Vấp')
+
+
+go
+insert into CT_HoaDon(MaHD, MaSP, DonGia, SoLuong) values(1,1,8000, 5)
+insert into CT_HoaDon(MaHD, MaSP, DonGia, SoLuong) values(1,2,1200, 4)
+insert into CT_HoaDon(MaHD, MaSP, DonGia, SoLuong) values(1,3,1000, 15)
+insert into CT_HoaDon(MaHD, MaSP, DonGia, SoLuong) values(2,2,1200, 9)
+insert into CT_HoaDon(MaHD, MaSP, DonGia, SoLuong) values(2,4,800, 5)
+insert into CT_HoaDon(MaHD, MaSP, DonGia, SoLuong) values(3,2,3500, 20)
+insert into CT_HoaDon(MaHD, MaSP, DonGia, SoLuong) values(3,3,1000, 15)
+
+select * from SanPham
+go
+update SanPham set SLTon = 100 where SanPham.MaNhom = 3 and SanPham.NaNCC = 2
+go
+select * from SanPham
+go
+update SanPham set MoTa = N'Duc nguyen dep trai' where SanPham.TenSp = N'Lò Vi Sóng'
+go
