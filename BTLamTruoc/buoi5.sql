@@ -68,3 +68,5 @@ select * from Customers where Customers.ContactName like 'M%'
 --20.	Liệt kê danh sách 2 employees có tuổi lớn nhất. Thông tin bao gồm EmployeeID, EmployeeName, Age. Trong đó, EmployeeName được ghép từ LastName và FirstName; Age là tuổi.
 go
 select top 2 EmployeeID,Employees.LastName + ' ' + Employees.FirstName as  EmployeeName, year(getdate())  - year(Employees.BirthDate) Age from Employees 
+go
+ select * from Employee where 
